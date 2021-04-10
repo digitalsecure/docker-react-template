@@ -6,20 +6,33 @@ import './App.css';
 class App extends Component {
   constructor() {
     super();
-    this.state = {
-      string : 'Hello React Developer!!'
-    }
+    this.state =  {
+      monsters: [
+                    {
+                      name: 'Frankenstein',
+                      id: 'abc1'
+                    },
+                    {
+                      name: 'Dracula',
+                      id: 'abc2'
+                    },
+                    {
+                      name: 'Zombie',
+                      id: 'abc3'
+                    }
+      ]
+    };
   }
 
   render() {
     return (
       <div className="container">
-        <h1>React Docker Template</h1>
-        This template provides the necessary Dockerfile to build a blank react project template.
-        <p>
-          { this.state.string }
-        </p>
-        <button onClick={ () => this.setState({string:'Hello React Guru!!'}) }>Change Text</button>
+        <h1>React Docker Template</h1> 
+        <div className="App">
+          {
+            this.state.monsters.map(monster => <h3 key={monster.id}>{ monster.name }</h3>)
+          }
+        </div>     
       </div>
     );
   }
