@@ -19,14 +19,10 @@ class App extends Component {
         <p>
           { this.state.string }
         </p>
-  
+        <button onClick={ () => this.setState({string:'Hello React Guru!!'}) }>Change Text</button>
       </div>
     );
   }
 }
-
-// function App() {
-  
-// }
 
 export default App;
