@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/docker-react-template/static/css/main.d6d5d320.chunk.css",
+    "main.js": "/docker-react-template/static/js/main.3fa70264.chunk.js",
+    "main.js.map": "/docker-react-template/static/js/main.3fa70264.chunk.js.map",
+    "runtime-main.js": "/docker-react-template/static/js/runtime-main.5998ea78.js",
+    "runtime-main.js.map": "/docker-react-template/static/js/runtime-main.5998ea78.js.map",
+    "static/js/2.88b7804e.chunk.js": "/docker-react-template/static/js/2.88b7804e.chunk.js",
+    "static/js/2.88b7804e.chunk.js.map": "/docker-react-template/static/js/2.88b7804e.chunk.js.map",
+    "static/js/3.c1b5618f.chunk.js": "/docker-react-template/static/js/3.c1b5618f.chunk.js",
+    "static/js/3.c1b5618f.chunk.js.map": "/docker-react-template/static/js/3.c1b5618f.chunk.js.map",
+    "index.html": "/docker-react-template/index.html",
+    "static/css/main.d6d5d320.chunk.css.map": "/docker-react-template/static/css/main.d6d5d320.chunk.css.map",
+    "static/js/2.88b7804e.chunk.js.LICENSE.txt": "/docker-react-template/static/js/2.88b7804e.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5998ea78.js",
+    "static/js/2.88b7804e.chunk.js",
+    "static/css/main.d6d5d320.chunk.css",
+    "static/js/main.3fa70264.chunk.js"
+  ]
+}
