@@ -12,6 +12,8 @@ class App extends Component {
       monsters: [],
       searchField: ''
     };
+
+    this.handleChange = this.handleChange.bind(this);
   }
 
   componentDidMount() {
@@ -22,6 +24,9 @@ class App extends Component {
       .catch(error=> console.log(error) );
   }
 
+  handleChange(e) {
+    this.setState({ searchField: e.target.value });
+  }
 
   render() {
     const { monsters, searchField } = this.state;
@@ -32,7 +37,7 @@ class App extends Component {
     return (
       <div className="container">
         <h1>React Docker Template</h1> 
-        <SearchBox placeholder="search monsters" handleChange={ e => this.setState({ searchField: e.target.value }) } />
+        <SearchBox placeholder="search monsters" handleChange={ this.handleChange } />
         <p />
         <CardList monsters={ filteredMonsters } />
       </div>
