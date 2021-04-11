@@ -12,8 +12,6 @@ class App extends Component {
       monsters: [],
       searchField: ''
     };
-
-    this.handleChange = this.handleChange.bind(this);
   }
 
   componentDidMount() {
@@ -24,7 +22,7 @@ class App extends Component {
       .catch(error=> console.log(error) );
   }
 
-  handleChange(e) {
+  handleChange = (e) => {
     this.setState({ searchField: e.target.value });
   }
 
