@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { CardList } from './components/card-list/card-list.component';
+import { SearchBox } from './components/search-box/search-box.component';
 
 // import logo from './logo.svg';
 import './App.css';
@@ -31,8 +32,7 @@ class App extends Component {
     return (
       <div className="container">
         <h1>React Docker Template</h1> 
-        <input type="search" placeholder="search monsters" 
-               onChange={ e => this.setState({ searchField: e.target.value }) } />
+        <SearchBox placeholder="search monsters" handleChange={ e => this.setState({ searchField: e.target.value }) } />
         <p />
         <CardList monsters={ filteredMonsters } />
       </div>
